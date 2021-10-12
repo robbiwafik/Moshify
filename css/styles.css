@@ -58,3 +58,34 @@ p {
     font-size: 2.4rem;
   }
 }
+
+/* Link */
+a {
+  text-decoration: none;
+}
+
+.link {
+  font-size: 2rem;
+}
+
+.link--arrow {
+  color: var(--color-accent);
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.link--arrow::after {
+  content: "-->";
+  margin-left: 5px;
+  transition: margin-left 0.3s;
+}
+
+.link--arrow:hover::after {
+  margin-left: 10px;
+}
+
+@media screen and (min-width: 1024px) {
+  .link {
+    font-size: 1.5rem;
+  }
+}
