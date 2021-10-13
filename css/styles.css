@@ -6,6 +6,12 @@
   --color-body: #918ca4;
 }
 
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+}
+
 /* Typography */
 html {
   font-size: 62.5%;
@@ -105,12 +111,12 @@ a {
 }
 
 .badge--dark-primary {
-  background: #126de4; /* TODO: Refactor using sas */
+  background: #126de4; /* FIXME: Refactor using sas */
   color: #fff;
 }
 
 .badge--dark-secondary {
-  background: #02cdf1; /* TODO: Refactor using sas */
+  background: #02cdf1; /* FIXME: Refactor using sas */
   color: #fff;
 }
 
@@ -177,11 +183,11 @@ a {
 }
 
 .icon-wrapper--white-gray {
-  background-color: #f3f9fa; /* TODO: Refactor using sas */
+  background-color: #f3f9fa; /* FIXME: Refactor using sas */
 }
 
 .icon-wrapper--dark-gray {
-  background-color: #393939; /* TODO: Refactor using sas */
+  background-color: #393939; /* FIXME: Refactor using sas */
 }
 
 .icon {
@@ -195,4 +201,74 @@ a {
 
 .icon--white {
   fill: #fff;
+}
+
+/* Buttons */
+.btn {
+  border-radius: 40px;
+  border: 0;
+  cursor: pointer;
+  font-size: 1.8rem;
+  font-weight: 600;
+  margin-bottom: 1rem;
+  padding: 2rem 4rem;
+  text-align: center;
+  text-decoration: none;
+  text-transform: uppercase;
+  white-space: nowrap;
+}
+
+.btn--secondary {
+  background-color: var(--color-secondary);
+  color: #fff;
+}
+
+.btn--secondary:hover {
+  background-color: #00c2e4; /* FIXME: Refactor using sas */
+}
+
+.btn--accent {
+  background-color: var(--color-accent);
+  color: #fff;
+}
+
+.btn--accent:hover {
+  background-color: #df2d01; /* FIXME: Refactor using sas */
+}
+
+.btn--outline {
+  background-color: #fff;
+  border: 2px solid var(--color-heading);
+  color: var(--color-heading);
+}
+
+.btn--outline:hover {
+  background-color: var(--color-heading);
+  color: #fff;
+}
+
+.btn--stretched {
+  padding: 2.5rem 8rem;
+}
+
+.btn--block {
+  display: inline-block;
+  width: 100%;
+}
+
+.btn--icon {
+  padding-left: 3rem;
+}
+
+.btn--icon .icon {
+  height: 2rem;
+  margin-right: 10px;
+  vertical-align: middle;
+  width: 2rem;
+}
+
+@media screen and (min-width: 1024px) {
+  .btn {
+    font-size: 1.5rem;
+  }
 }
