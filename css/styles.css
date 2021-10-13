@@ -128,3 +128,40 @@ a {
     font-size: 1.2rem;
   }
 }
+
+/* lists */
+.list {
+  color: var(--color-heading);
+  list-style: none;
+  margin-top: 0;
+  padding-left: 0;
+}
+
+.list__item {
+  margin-bottom: 1rem;
+}
+
+.list--inline .list__item {
+  display: inline-block;
+  margin-right: 2rem;
+}
+
+.list--tick {
+  list-style-image: url(../images/tick.svg);
+  padding-left: 2rem;
+}
+
+.list--tick .list__item {
+  padding-left: 0.5rem;
+}
+
+@media screen and (min-width: 1024px) {
+  .list {
+    font-size: 1.6rem;
+    margin-bottom: 2rem;
+  }
+
+  .list--tick .list__item {
+    padding-left: 0;
+  }
+}
