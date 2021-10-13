@@ -89,3 +89,42 @@ a {
     font-size: 1.5rem;
   }
 }
+
+/* Badges */
+.badge {
+  border-radius: 20px;
+  font-size: 2rem;
+  font-weight: 600;
+  padding: 0.7rem 2rem;
+  white-space: nowrap;
+}
+
+.badge--secondary {
+  background: var(--color-secondary);
+  color: #fff;
+}
+
+.badge--dark-primary {
+  background: #126de4; /* TODO: Refactor using sas */
+  color: #fff;
+}
+
+.badge--dark-secondary {
+  background: #02cdf1; /* TODO: Refactor using sas */
+  color: #fff;
+}
+
+.badge--small {
+  font-size: 1.6rem;
+  padding: 0.7rem 1rem;
+}
+
+@media screen and (min-width: 1024px) {
+  .badge {
+    font-size: 1.5rem;
+  }
+
+  .badge--small {
+    font-size: 1.2rem;
+  }
+}
