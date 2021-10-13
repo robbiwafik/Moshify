@@ -165,3 +165,34 @@ a {
     padding-left: 0;
   }
 }
+
+/* icons */
+.icon-wrapper {
+  align-items: center;
+  border-radius: 100%;
+  display: inline-flex;
+  height: auto;
+  justify-content: center;
+  padding: 12px;
+}
+
+.icon-wrapper--white-gray {
+  background-color: #f3f9fa; /* TODO: Refactor using sas */
+}
+
+.icon-wrapper--dark-gray {
+  background-color: #393939; /* TODO: Refactor using sas */
+}
+
+.icon {
+  width: 40px;
+  height: 40px;
+}
+
+.icon--primary {
+  fill: var(--color-primary);
+}
+
+.icon--white {
+  fill: #fff;
+}
