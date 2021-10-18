@@ -272,3 +272,24 @@ a {
     font-size: 1.5rem;
   }
 }
+
+.input {
+  border: 1px solid #ccc;
+  border-radius: 30px;
+  outline: none;
+  padding: 2rem 3.5rem;
+  color: var(--color-heading);
+}
+
+.input::placeholder {
+  color: var(--color-heading);
+  font-size: 2rem;
+  font-weight: 300;
+  opacity: 0.3;
+}
+
+@media screen and (min-width: 1024px) {
+  .input::placeholder {
+    font-size: 1.5rem;
+  }
+}
