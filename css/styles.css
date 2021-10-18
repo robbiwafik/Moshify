@@ -6,6 +6,12 @@
   --color-body: #918ca4;
 }
 
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+}
+
 /* Typography */
 html {
   font-size: 62.5%;
@@ -56,5 +62,213 @@ p {
 
   h3 {
     font-size: 2.4rem;
+  }
+}
+
+/* Link */
+a {
+  text-decoration: none;
+}
+
+.link {
+  font-size: 2rem;
+}
+
+.link--arrow {
+  color: var(--color-accent);
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.link--arrow::after {
+  content: "-->";
+  margin-left: 5px;
+  transition: margin-left 0.3s;
+}
+
+.link--arrow:hover::after {
+  margin-left: 10px;
+}
+
+@media screen and (min-width: 1024px) {
+  .link {
+    font-size: 1.5rem;
+  }
+}
+
+/* Badges */
+.badge {
+  border-radius: 20px;
+  font-size: 2rem;
+  font-weight: 600;
+  padding: 0.7rem 2rem;
+  white-space: nowrap;
+}
+
+.badge--secondary {
+  background: var(--color-secondary);
+  color: #fff;
+}
+
+.badge--dark-primary {
+  background: #126de4; /* FIXME: Refactor using sas */
+  color: #fff;
+}
+
+.badge--dark-secondary {
+  background: #02cdf1; /* FIXME: Refactor using sas */
+  color: #fff;
+}
+
+.badge--small {
+  font-size: 1.6rem;
+  padding: 0.7rem 1rem;
+}
+
+@media screen and (min-width: 1024px) {
+  .badge {
+    font-size: 1.5rem;
+  }
+
+  .badge--small {
+    font-size: 1.2rem;
+  }
+}
+
+/* lists */
+.list {
+  color: var(--color-heading);
+  list-style: none;
+  margin-top: 0;
+  padding-left: 0;
+}
+
+.list__item {
+  margin-bottom: 1rem;
+}
+
+.list--inline .list__item {
+  display: inline-block;
+  margin-right: 2rem;
+}
+
+.list--tick {
+  list-style-image: url(../images/tick.svg);
+  padding-left: 2rem;
+}
+
+.list--tick .list__item {
+  padding-left: 0.5rem;
+}
+
+@media screen and (min-width: 1024px) {
+  .list {
+    font-size: 1.6rem;
+    margin-bottom: 2rem;
+  }
+
+  .list--tick .list__item {
+    padding-left: 0;
+  }
+}
+
+/* icons */
+.icon-wrapper {
+  align-items: center;
+  border-radius: 100%;
+  display: inline-flex;
+  height: auto;
+  justify-content: center;
+  padding: 12px;
+}
+
+.icon-wrapper--white-gray {
+  background-color: #f3f9fa; /* FIXME: Refactor using sas */
+}
+
+.icon-wrapper--dark-gray {
+  background-color: #393939; /* FIXME: Refactor using sas */
+}
+
+.icon {
+  width: 40px;
+  height: 40px;
+}
+
+.icon--primary {
+  fill: var(--color-primary);
+}
+
+.icon--white {
+  fill: #fff;
+}
+
+/* Buttons */
+.btn {
+  border-radius: 40px;
+  border: 0;
+  cursor: pointer;
+  font-size: 1.8rem;
+  font-weight: 600;
+  margin-bottom: 1rem;
+  padding: 2rem 4rem;
+  text-align: center;
+  text-decoration: none;
+  text-transform: uppercase;
+  white-space: nowrap;
+}
+
+.btn--secondary {
+  background-color: var(--color-secondary);
+  color: #fff;
+}
+
+.btn--secondary:hover {
+  background-color: #00c2e4; /* FIXME: Refactor using sas */
+}
+
+.btn--accent {
+  background-color: var(--color-accent);
+  color: #fff;
+}
+
+.btn--accent:hover {
+  background-color: #df2d01; /* FIXME: Refactor using sas */
+}
+
+.btn--outline {
+  background-color: #fff;
+  border: 2px solid var(--color-heading);
+  color: var(--color-heading);
+}
+
+.btn--outline:hover {
+  background-color: var(--color-heading);
+  color: #fff;
+}
+
+.btn--stretched {
+  padding: 2.5rem 8rem;
+}
+
+.btn--block {
+  display: inline-block;
+  width: 100%;
+}
+
+.btn--icon {
+  padding-left: 3rem;
+}
+
+.btn--icon .icon {
+  height: 2rem;
+  margin-right: 10px;
+  vertical-align: middle;
+  width: 2rem;
+}
+
+@media screen and (min-width: 1024px) {
+  .btn {
+    font-size: 1.5rem;
   }
 }
