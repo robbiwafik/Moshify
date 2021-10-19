@@ -417,3 +417,20 @@ a {
     font-size: 1.8rem;
   }
 }
+
+/* Media objects */
+.media-object {
+  display: flex;
+}
+
+.media__image {
+  margin-top: 1.5rem;
+}
+
+.media__body {
+  margin: 0 2rem;
+}
+
+.media__title {
+  margin-top: 0;
+}
