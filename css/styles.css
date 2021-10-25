@@ -260,7 +260,7 @@ a {
 }
 
 .btn--stretched {
-  padding: 2.5rem 8rem;
+  padding: 2rem 8rem;
 }
 
 .btn--block {
@@ -536,5 +536,46 @@ a {
   .testimonial .quote,
   .testimonial .quote__name {
     font-size: 2.4rem;
+  }
+}
+
+/* Callouts */
+.callout {
+  border-radius: 7px;
+  padding: 4rem;
+}
+
+.callout--primary {
+  background-color: var(--color-primary);
+  color: #fff;
+}
+
+.callout__content {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.callout__heading {
+  color: #fff;
+  margin-top: 0;
+}
+
+.callout__btn {
+  align-self: center;
+  justify-self: center;
+}
+
+@media screen and (min-width: 768px) {
+  .callout .grid--1x2 {
+    grid-template-columns: 1fr auto;
+  }
+
+  .callout__content {
+    text-align: start;
+  }
+
+  .callout__btn {
+    justify-self: start;
+    margin-left: 2rem;
   }
 }
