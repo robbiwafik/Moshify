@@ -718,3 +718,38 @@ a {
     display: none;
   }
 }
+
+/* Hero */
+.hero.block--skewed-left {
+  clip-path: polygon(0% 0%, 100% 0%, 100% 90%, 0% 100%);
+}
+
+.hero__heading {
+  font-size: 7rem;
+  line-height: 1;
+  margin-top: 0;
+  margin-bottom: 1rem;
+}
+
+.hero__tagline {
+  color: #b9c3cf;
+  font-size: 2rem;
+  letter-spacing: 1px;
+  margin: 2rem 0 5rem;
+}
+
+.hero__image {
+  width: 100%;
+}
+
+@media screen and (min-width: 768px) {
+  .hero {
+    padding-top: 0;
+  }
+
+  .hero__content {
+    text-align: left;
+    align-self: center;
+    padding: 0 1.5rem;
+  }
+}
