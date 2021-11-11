@@ -348,6 +348,19 @@ a {
   color: #fff;
 }
 
+.card:hover {
+  transform: scale(1.05);
+}
+
+/* FIXME: card--popular and plan--popular */
+.card--popular {
+  transform: scale(1.1);
+}
+
+.card--popular:hover {
+  transform: scale(1.15);
+}
+
 /* Plans */
 .plan {
   color: #fff;
@@ -361,9 +374,9 @@ a {
 .plan--popular .card__header::before {
   content: url(../images/popular.svg);
   position: absolute;
-  width: 40px;
+  width: 30px;
   top: -2%;
-  right: 10%;
+  right: 5%;
 }
 
 .plan__title {
@@ -785,5 +798,24 @@ a {
 @media screen and (min-width: 768px) {
   .block-domain__prices {
     grid-template-columns: repeat(auto-fit, minmax(10rem, 1fr));
+  }
+}
+
+/* Plans Block */
+.block-plans .grid {
+  gap: 4rem;
+}
+
+.block-plans .card {
+  max-width: 500px;
+}
+
+@media screen and (max-width: 768px) {
+  .card--popular {
+    transform: scale(1);
+  }
+
+  .card--popular:hover {
+    transform: scale(1.05);
   }
 }
