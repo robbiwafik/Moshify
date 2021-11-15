@@ -819,3 +819,23 @@ a {
     transform: scale(1.05);
   }
 }
+
+/* Features */
+.feature {
+  gap: 5rem 2rem;
+  margin: 12rem 0;
+}
+
+.feature__heading {
+  margin-top: 1rem;
+}
+
+.feature__image {
+  width: 100%;
+}
+
+@media screen and (min-width: 768px) {
+  .feature:nth-of-type(even) .feature__content {
+    order: 2;
+  }
+}
